@@ -2,8 +2,8 @@ import styled from "styled-components";
 import * as colors from "@styles/colors";
 
 const Container = styled.div`
-  width: 100%;
   margin-top: 64px;
+  width: 100%;
   height: 400px;
   padding: 20px;
 `;
@@ -21,8 +21,8 @@ const TopLeftTriangle = styled.div`
   border-top: 60px solid ${colors.bgPrimary};
   border-right: 60px solid transparent;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: -1px;
+  left: -1px;
 `;
 
 const TopRightTriangle = styled.div`
@@ -30,9 +30,9 @@ const TopRightTriangle = styled.div`
   height: 0px;
   border-bottom: 60px solid ${colors.bgPrimary};
   border-left: 60px solid transparent;
-  bottom: 0px;
-  right: 0px;
   position: absolute;
+  bottom: -1px;
+  right: -1px;
 `;
 
 const BannerOrderBox = styled.div`

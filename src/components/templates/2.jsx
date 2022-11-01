@@ -1,66 +1,44 @@
 import styled from "styled-components";
 import * as colors from "@styles/colors";
-
 const Container = styled.div`
-  margin-top: 64px;
   width: 100%;
-  height: 400px;
-  padding: 20px;
+  height: 398px;
+  background-color: red;
+  font-family: MarkPro-Heavy;
+  font-size: 32px;
+  padding: 40px 16px;
 `;
 
-const BannerWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: ${colors.textYellow};
-  position: relative;
+const EventsTopWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
-const TopLeftTriangle = styled.div`
-  width: 0px;
-  height: 0px;
-  border-top: 60px solid ${colors.bgPrimary};
-  border-right: 60px solid transparent;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+const GradientSectionTitle = styled.span`
+  font-size: 18px;
+  font-weight: 700px;
+  background: ${colors.textGradient};
+  background-clip: text;
+  -webkit-background-clip: text;
 `;
-
-const TopRightTriangle = styled.div`
-  width: 0px;
-  height: 0px;
-  border-bottom: 60px solid ${colors.bgPrimary};
-  border-left: 60px solid transparent;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-`;
-
-const BannerOrderBox = styled.div`
-  width: 51px;
-  height: 29px;
-  background-color: ${colors.bgBannerButton};
-  border-radius: 6px;
-  position: absolute;
-  left: 16px;
-  bottom: 16px;
-  font-size: 14px;
-  color: ${colors.textSecondary};
-  z-index: 10;
+const ShowAllText = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  color: ${colors.textSecondary};
 `;
 
-function TopBanner() {
+function Events() {
   return (
     <Container>
-      <BannerWrapper>
-        <TopLeftTriangle />
-        <TopRightTriangle />
-        <BannerOrderBox> 1 / 2</BannerOrderBox>
-      </BannerWrapper>
+      <EventsTopWrapper>
+        <GradientSectionTitle>테스트</GradientSectionTitle>
+        <ShowAllText>테스트 2</ShowAllText>
+      </EventsTopWrapper>
     </Container>
   );
 }
 
-export default TopBanner;
+export default Events;
