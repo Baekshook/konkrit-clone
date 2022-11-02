@@ -14,6 +14,9 @@ export const bgSecondary = "#27272a";
 export const bgBlack = "black";
 export const bgBannerButton = "rgba(0,0,0,0.4)";
 
+//border 색상
+export const borderSecondary = "rgb(39, 39, 42)";
+
 //gradient
 
 export const textGradient = `linear-gradient(
